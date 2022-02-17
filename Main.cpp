@@ -8,5 +8,6 @@ int main()
 	std::cout << "D";
 	std::cout << "E";
 	std::cout << "F";
+	std::cout << "G";
 	return 0;
 }
