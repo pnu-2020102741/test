@@ -1,4 +1,4 @@
 language: cpp
 compiler: gcc
 before_script: test -f test_travis.txt
-script: g++ Main.cpp -o main
+script: g++ Main.cpp -I/ -o main
