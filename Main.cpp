@@ -13,8 +13,8 @@ int main()
 	std::cout << "H";
 	std::cout << "I" << std::endl;
 	std::cout << a_plus_b(1, 2) << std::endl;
-	for (char a = -128; a < 127; a++)
-		std::cout << a;
+	for (char bb = -128; bb < 127; bb++)
+		std::cout << bb;
 	std::cout << std::endl;
 	system("pause");
 	return 0;
