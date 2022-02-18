@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Notmain.h"
 
 int main()
 {
@@ -10,6 +11,8 @@ int main()
 	std::cout << "F";
 	std::cout << "G";
 	std::cout << "H";
-	std::cout << "I";
+	std::cout << "I" << std::endl;
+	std::cout << a_plus_b(1, 2);
+	system("pause");
 	return 0;
 }
