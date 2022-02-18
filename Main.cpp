@@ -12,7 +12,10 @@ int main()
 	std::cout << "G";
 	std::cout << "H";
 	std::cout << "I" << std::endl;
-	std::cout << a_plus_b(1, 2);
+	std::cout << a_plus_b(1, 2) << std::endl;
+	for (char a = -128; a < 127; a++)
+		std::cout << a;
+	std::cout << std::endl;
 	system("pause");
 	return 0;
 }
