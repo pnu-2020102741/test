@@ -1,2 +1,2 @@
 language: cpp
-compiler: cl
+compiler: gcc
