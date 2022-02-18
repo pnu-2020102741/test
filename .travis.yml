@@ -3,6 +3,4 @@ compiler: gcc
 before_script: test -f test_travis.txt
 jobs:
   include:
-    - script: g++ -c Notmain.cpp -o notmain.o
-    - script: g++ Main.cpp -o main.out notmain.o
-    - script: ./main.out
+    - script: g++ -c Notmain.cpp -o notmain.o && g++ Main.cpp -o main.out notmain.o && ./main.out
