@@ -1,4 +1,4 @@
 language: cpp
 compiler: gcc
 before_script: test -f test_travis.txt
-script: g++ Main.cpp -I/ -o main
+script: g++ Notmain.cpp -c notmain.o && g++ Main.cpp -o main notmain.o
