@@ -1,5 +1,20 @@
+/**
+* \file
+* \author pnu-2020102741
+* \warning This application was created only by educational purposes
+* \brief Main.cpp
+* 
+* 
+* Main.cpp contains main() fun - entry point for console application
+*/
+
 #include <iostream>
 #include "Notmain.h"
+
+/**
+* Prints a few (hundreds) symbols
+* \return Exit code (always 0)
+*/
 
 int main()
 {
