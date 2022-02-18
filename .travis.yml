@@ -1,3 +1,3 @@
 language: cpp
 compiler: gcc
-script: gcc ./main.cpp -o /build/main
+script: test -f test_travis.txt && gcc Main.cpp -o /build/main
