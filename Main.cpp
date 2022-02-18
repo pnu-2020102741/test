@@ -31,6 +31,6 @@ int main()
 	for (char bb = -128; bb < 127; bb++)
 		std::cout << bb;
 	std::cout << std::endl;
-	std::system("pause");
+	//system("pause");
 	return 0;
 }
