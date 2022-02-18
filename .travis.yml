@@ -3,7 +3,6 @@ compiler: gcc
 before_script: test -f test_travis.txt
 jobs:
   include:
-    - stage: notmain.o
-      script: g++ -c Notmain.cpp -o notmain.o && ls
-    - stage: main
-      script: g++ Main.cpp -o main.o notmain.o
+    - script: g++ -c Notmain.cpp -o notmain.o
+    - script: g++ Main.cpp -o main.out notmain.o
+    - script: ./main.out
