@@ -1,4 +1,9 @@
 language: cpp
 compiler: gcc
 before_script: test -f test_travis.txt
-script: g++ Notmain.cpp -c notmain.o && g++ Main.cpp -o main notmain.o
+jobs:
+  include:
+    - stage: notmain.o
+      script: g++ Notmain.cpp -c notmain.o
+    - stage: main
+      script: g++ Main.cpp -o main notmain.o
