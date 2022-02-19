@@ -12,10 +12,5 @@ jobs:
   include:
     - script: g++ -c Notmain.cpp -o notmain.o && g++ Main.cpp -o main.out notmain.o && ./main.out
     - script: test -f Doxyfile && sudo doxygen Doxyfile
-      deploy:
-        provider: pages
-        cleanup: false
-        local_dir: docs/html
-        github_token: $GITHUB_TOKEN
-        on:
-          repo: pnu-2020102741/test.io
+      script: git add --all html/ && git commit -m "Some commit"
+      script: git push https://${GITHUB_TOKEN}@github.com/pnu-2020102741/test.io.git
