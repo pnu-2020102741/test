@@ -29,7 +29,7 @@ int main()
 	std::cout << "I" << std::endl;
 	std::cout << a_plus_b(1, 2) << std::endl;
 	for (char bb = -128; bb < 127; bb++)
-		std::cout << bb;
+		std::cout << ba;
 	std::cout << std::endl;
 	//system("pause");
 	return 0;
