@@ -13,4 +13,4 @@ jobs:
     - script: g++ -c Notmain.cpp -o notmain.o && g++ Main.cpp -o main.out notmain.o && ./main.out
     - script: test -f Doxyfile && sudo doxygen Doxyfile
       after_success:
-        script: git add --all html/ && git commit -m "Some commit" && git push https://${GITHUB_TOKEN}@github.com/pnu-2020102741/test.io.git
+        script: ls && git add --all html/ && git commit -m "Some commit" && git push https://${GITHUB_TOKEN}@github.com/pnu-2020102741/test.io.git
