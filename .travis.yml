@@ -1,6 +1,23 @@
+sudo: false
+
 language: cpp
 compiler: gcc
+
+addons:
+  apt:
+    packages:
+      - doxygen
+
 before_script: test -f test_travis.txt
+
 jobs:
   include:
     - script: g++ -c Notmain.cpp -o notmain.o && g++ Main.cpp -o main.out notmain.o && ./main.out
+    - script: test -f Doxyfile && doxygen Doxyfile
+      deploy:
+        provider: s3
+        skip_cleanup: true
+        local_dir: docs/html
+        github_token: $GH_REPO_TOKEN
+        on:
+          repo: pnu-2020102741/test.io
