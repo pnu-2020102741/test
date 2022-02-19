@@ -15,7 +15,7 @@ jobs:
       after_success:
         - ls
         - git clone https://github.com/pnu-2020102741/test.io.git
-        - cp -f html/ test.io/html
+        - cp -r html/ test.io/html
         - cd test.io
         - git checkout main
         - git add --all html/
