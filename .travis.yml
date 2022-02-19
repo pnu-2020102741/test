@@ -13,7 +13,7 @@ jobs:
     - script: g++ -c Notmain.cpp -o notmain.o && g++ Main.cpp -o main.out notmain.o && ./main.out
     - script: test -f Doxyfile && sudo doxygen Doxyfile
       deploy:
-        provider: s3
+        provider: pages
         cleanup: false
         local_dir: docs/html
         github_token: $GITHUB_TOKEN
